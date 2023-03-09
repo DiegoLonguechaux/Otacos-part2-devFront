@@ -1,0 +1,114 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: linear-gradient(#2D0C1D, #4D1715);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: linear-gradient(#2D0C1D, #4D1715);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+
+@import url("https://fonts.cdnfonts.com/css/veneer-2");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Unica+One&display=swap");
+@import url(//db.onlinewebfonts.com/c/e2a0ade0d956a5cf1f250102311fcf30?family=Kraft+Nine);
+:root {
+  --clr-violet: #2D0C1D;
+  --clr-marron: #4D1715;
+  --clr-orange: #E54315;
+  --clr-orangehover: #bd2f08;
+  --clr-grisclair: #292C31;
+  --clr-gris: #262626;
+  --clr-blanc: #F1F6F9;
+  --clr-linear: linear-gradient(#2D0C1D, #4D1715);
+  --clr-bleu: #000469;
+  --clr-rose: #800383;
+  --clr-hoverlogofb: brightness(0) saturate(100%) invert(11%) sepia(25%) saturate(7133%) hue-rotate(227deg) brightness(106%) contrast(130%);
+  --clr-hoverlogoinsta: invert(12%) sepia(54%) saturate(6995%) hue-rotate(292deg) brightness(79%) contrast(107%);
+  --clr-background: #1B1B1B;
+  --clr-gris50: rgba(241, 246, 249, 0.5);
+  --clr-blanc75: rgba(241, 246, 249, 0.75);
+  --ff-veneer: 'Veneer', 'sans-serif';
+  --ff-roboto-condensed: 'Roboto Condensed', 'sans-serif';
+  --ff-unica-one: 'Unica One', 'cursive';
+  --ff-kraft: Kraft Nine;
+  --fs-70: 70px;
+  --fs-50: 50px;
+  --fs-45: 45px;
+  --fs-40: 40px;
+  --fs-30: 30px;
+  --fs-25: 25px;
+  --fs-24: 24px;
+  --fs-23: 23px;
+  --fs-20: 20px;
+  --fs-18: 18px;
+  --fs-16: 16px;
+  --fs-12: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  background: linear-gradient(#2D0C1D, #4D1715);
+}
